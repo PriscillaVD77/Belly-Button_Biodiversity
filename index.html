@@ -9,15 +9,26 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
-<body>
-
+<body style="background-color:rgb(189, 143, 158);">
   <div class="container">
     <div class="row">
-      <div class="col-md-12 jumbotron text-center">
+      <div class="col-md-12 jumbotron text-center" style= "background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0.315) 40%,rgba(255,255,255,0.9) 100%), url(/images/bacteria.jpg)" >
         <h1>Belly Button Biodiversity Dashboard</h1>
         <p>Use the interactive charts below to explore the dataset</p>
       </div>
     </div>
+    <div class="container"  style="background-color:rgb(204, 175, 207); width: 60%;">
+      <div class="row">
+        <div class="col-md-9">
+         <h1><b>Dive in to the Research!</b></h1>
+           <p style="font-family: cursive"></p> Hello! My name is Rosa and I am a prominent researcher in microbiology. There is a world of bacteria undiscovered and unresearched.
+              It is my goal to study these samples and see what bacteria can be found on our very own bodies! We are entering a new world and I see the possibilities
+              new bacteria can make when synthesizing new material, some even edible! Please enjoy these visualizations that help to summarize some of my research 
+              and that will open the door for new inventions. In my research, we look at the specific backteria in the belly button and see how they vary between each person. Enjoy!</p>
+        </div>
+      </div>
+    </div>
+    <br>
     <div class="row">
       <div class="col-md-2">
         <div class="well">
@@ -34,21 +45,24 @@
       </div>
       <div class="col-md-5">
         <div id="bar"></div>
+          <p><b>This bar graph shows the top ten bacteria cultures found in each persons sample. They are listed in descening order. </b> </p>
       </div>
       <div class="col-md-5">
         <div id="gauge"></div>
+          <p><b>This guage documents the washing frequency for each Id.</b> </p>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
         <div id="bubble"></div>
+          <p><b>The bubble chart shows Bacterie Cultures per sample. The size of each bubble represents the amount of each bacteria for each sample. Each color represents each different bacteria id.</b> </p>
       </div>
     </div>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="plots.js"></script>
+  <script src="charts.js"></script>
 
 </body>
 
